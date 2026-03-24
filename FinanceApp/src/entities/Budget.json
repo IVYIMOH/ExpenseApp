@@ -1,0 +1,12 @@
+[
+  {
+    "category": "Education",
+    "limit": 500.00,
+    "spent": 45.00
+  },
+  {
+    "category": "Food",
+    "limit": 200.00,
+    "spent": 0.00
+  }
+]
