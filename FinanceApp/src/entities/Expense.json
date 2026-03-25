@@ -1,10 +1,54 @@
-[
-  {
-    "id": "exp-001",
-    "date": "2026-03-25",
-    "description": "Lab Supplies",
-    "amount": 45.00,
-    "category": "Education",
-    "type": "expense"
-  }
-]
+{
+  "name": "Expense",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "amount": {
+      "type": "number",
+      "title": "Amount ($)"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category",
+      "enum": [
+        "Food",
+        "Transport",
+        "Housing",
+        "Entertainment",
+        "Health",
+        "Education",
+        "Shopping",
+        "Savings",
+        "Other"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    },
+    "type": {
+      "type": "string",
+      "title": "Type",
+      "enum": [
+        "expense",
+        "income"
+      ],
+      "default": "expense"
+    }
+  },
+  "required": [
+    "title",
+    "amount",
+    "category",
+    "date",
+    "type"
+  ]
+}
