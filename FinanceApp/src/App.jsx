@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="p-8 max-w-4xl mx-auto">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-blue-600">FinanceIQ Dashboard</h1>
-        <p className="text-gray-600">Welcome to your financial forensic analysis.</p>
+        <h1 className="text-3xl font-bold text-blue-600">OkoaPesa Dashboard</h1>
+        <p className="text-gray-600">Welcome to your financial analysis. Master your personal finance!</p>
       </header>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
